@@ -51,7 +51,8 @@ ORDER BY count DESC;
 SELECT *
 FROM retiring_titles;
 
-SELECT e.emp_no, 
+--Deliverable 2:Steps 1 - 9
+SELECT DISTINCT ON (e.emp_no) e.emp_no, 
 	e.first_name, 
 	e.last_name,
 	e.birth_date,
@@ -69,3 +70,4 @@ ORDER BY e.emp_no;
 
 SELECT * 
 FROM mentorship_eligibility;
+
